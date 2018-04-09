@@ -1,0 +1,58 @@
+.btn-width{
+	width: 100%;
+	background: transparent;
+	text-align: left;
+	color: #d8cccc;
+	border: 1px solid #d8cccc;
+	line-height: 64px;
+    padding: 0px 15px;
+}
+
+.btn-width:focus{
+	background: #27273a;
+	color: #b96431bd;
+}
+
+.top-space{
+	padding-top: 20px;
+	max-width: 800px;
+	margin: 0px auto;
+}
+
+.dumbble-img{
+	width: 40px;
+	padding-top: 10px;
+}
+
+.glyph-cycle{
+	font-size: 42px;
+	padding-top: 10px;
+	color: #e4e1e1;
+	position: absolute;
+	right: 30px;
+}
+
+.cycling-btn{
+	background: #27273a;
+	color: #b96431bd;
+}
+
+.new-medal{
+	background: #f75f06cf;
+    color: #fff;
+    margin-left: 196px;
+}
+
+.new-medal:focus{
+	background: #f75f06cf;
+    color: #fff;
+}
+
+h3.new-medal-heading{
+	color: #d8cccc;
+	padding-left: 20px;
+}
+
+.selected-year{
+	padding: 6px 5px;
+}

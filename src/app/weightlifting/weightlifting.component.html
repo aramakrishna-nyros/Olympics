@@ -1,0 +1,32 @@
+<div class="container top-space">
+	<div class="col-md-6"><button type="button" class="btn btn-primary btn-lg btn-width" (click)="gotoCyclings()">Cycling <i class="fas fa-bicycle glyph-cycle"></i></button></div>
+	<div class="col-md-6"><button type="button" class="btn btn-primary btn-lg btn-width" [ngClass]="{'cycling-btn': isWeightLiftingAvailable === true}" (click)="gotoWeightLiftings()">Weightlifting<img src="../assets/images/dumbbell.png" class="glyph-cycle dumbble-img"></button></div>
+</div>
+
+<div class="container" *ngIf="isWeightLiftingAvailable">
+    <div class="row">
+		<h3 class="col-sm-offset-2 col-sm-10 new-medal-heading">Weightlifting Gold Medals</h3>
+	</div>	
+    <div class="row tb-align">
+    	<div class="col-sm-offset-2 col-sm-8">
+		  <table class="table table-bordered">
+		    <thead>
+		      <tr>
+		        <th>Year</th>
+		        <th>Division</th>
+		        <th>Country</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr *ngFor="let weightlifting of weightliftings">
+		        <td>{{ weightlifting.year }}</td>
+		        <td>{{ weightlifting.division | titlecase }}</td>
+		        <td>{{ weightlifting.country | titlecase }}</td>
+		      </tr>
+		    </tbody>
+		  </table>
+    	</div>	
+    	<div class="col-sm-2"></div>
+    </div>
+	<button type="button" class="btn btn-default btn-md new-medal col-sm-offset-2" (click)="newWeightLifting()">New Medal</button>
+</div>
